@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <div id="display">0</div>
+
+        <div id="keys">
+            <table>
+                <tr>
+                    <td><button data-action="sum" class="botoes" id="soma">+</button></td>
+                    <td><button data-action="minus" class="botoes" id="subtracao">-</button></td>
+                    <td><button data-action="division" class="botoes" id="divisao">÷</button></td>
+                    <td><button data-action="multiply" class="botoes" id="multiplicacao">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botoes">7</button></td>
+                    <td><button class="botoes">8</button></td>
+                    <td><button class="botoes">9</button></td>
+                    <td rowspan="4"><button data-action="equal" class="botoes" id="equal">=</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botoes">4</button></td>
+                    <td><button class="botoes">5</button></td>
+                    <td><button class="botoes">6</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botoes">1</button></td>
+                    <td><button class="botoes">2</button></td>
+                    <td><button class="botoes">3</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botoes">.</button></td>
+                    <td><button class="botoes">0</button></td>
+                    <td><button data-action="reset" class="botoes" id="AC">AC</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

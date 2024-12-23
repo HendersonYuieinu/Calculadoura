@@ -1,0 +1,77 @@
+#box{
+    width: max-content;
+    min-width: 50vh;
+    max-width: 50vh;
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 0px 0px 2px blue;
+}
+
+#display{
+    background-color: black;
+    display: flex;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 3px white inset;
+    height: max-content;
+    font-size: xx-large;
+    padding: 5%;
+}
+
+#keys{
+    display: flex;
+    flex-direction: row;
+}
+
+td{
+    width: 25%;
+    margin: none;
+    height: min-content;
+}
+
+table{
+    width: 100%;
+    padding: none;
+    border-collapse: collapse;
+}
+
+#equal{
+    height: 41vh;
+}
+
+.botoes{
+    height: 10vh;
+    width: 100%;
+    
+    font-size: xx-large;
+    border: none;
+    transition: box-shadow 0.1s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.botoes:hover{
+    background-color: gainsboro;
+}
+
+.botoes:active{
+    box-shadow: 0px 0px 3px black inset;
+}
+
+#AC{
+    background-color: red;
+}
+
+#AC:hover{
+    background-color: darkred;
+}
+
+#equal{
+    background-color: green;
+}
+
+#equal:hover{
+    background-color: darkgreen;
+}
