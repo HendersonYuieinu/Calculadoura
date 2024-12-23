@@ -39,7 +39,7 @@ table{
 }
 
 #equal{
-    height: 41vh;
+    height: 31vh;
 }
 
 .botoes{
@@ -74,4 +74,12 @@ table{
 
 #equal:hover{
     background-color: darkgreen;
+}
+
+#DEL{
+    background-color: orange;
+}
+
+#DEL:hover{
+    background-color: darkorange;
 }
