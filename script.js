@@ -49,6 +49,7 @@ keys.addEventListener("click", e =>{
                 }else if(lastAction == "division"){
                     if(b == 0){
                         dspl.innerHTML = "ERROR: Division zero.";
+                        a = 0;
                     }else{
                         dspl.innerHTML = a / b;    
                     }
