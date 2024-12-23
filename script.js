@@ -13,6 +13,7 @@ keys.addEventListener("click", e =>{
         if(action){
             console.log("botao pressionado " + key.textContent);
             if(action == "reset"){
+                a = 0;
                 dspl.innerHTML = 0;
             }
             else if(action == "sum"){
@@ -46,7 +47,11 @@ keys.addEventListener("click", e =>{
                 }else if(lastAction == "minus"){
                     dspl.innerHTML = a - b;
                 }else if(lastAction == "division"){
-                    dspl.innerHTML = a / b;
+                    if(b == 0){
+                        dspl.innerHTML = "ERROR: Division zero."
+                    }else{
+                        dspl.innerHTML = a / b;    
+                    }
                 }else if(lastAction == "multiply"){
                     dspl.innerHTML = a * b;
                 }
@@ -59,7 +64,7 @@ keys.addEventListener("click", e =>{
         else if(!action){
             console.log(lastAction);
             console.log("numero " + key.textContent + " pressionado");
-            if(dspl.textContent == 0){
+            if(dspl.textContent == 0 || dspl.textContent == "ERROR: Division zero."){
                 dspl.innerHTML = key.textContent;
                 console.log(a);
             }else{
